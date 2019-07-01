@@ -21,14 +21,14 @@
 <!-- Client.where("orders_count = '2'") -->
 
   <tbody>
-    <% @produtos.each do |produto| %>
-    <% if produto.estoque  == true  %>
+    <% @produtos.each do |produto| %>   <!-- Isso irá fazer todos os produtos criados serem carregados.  -->
+    <% if produto.estoque  == true  %>  <!-- Se o atributo estoque for verdadeiro mostre o item. -->
       <tr>
         <td><%= produto.titulo %></td>
         <td><%= produto.conteudo %></td>
         <td><%= produto.preco %></td>
         <td><%= produto.url %></td>
-        <td><img src="<%= produto.url %>"></td>
+        <td><img src="<%= produto.url %>"></td>  <!-- O que vai ocorrer aqui é oa tributo URL ocupando o texto da src da img. -->
         <!--   NAO CONSEGUI ASSIM TMB <td><PORCENTO= image_tag produto.url('300x300') PORCENTO> </td>   -->
         <!-- Ian, eu consegui, sou p1k4 :D -->
         <td><%= produto.estoque %></td>
