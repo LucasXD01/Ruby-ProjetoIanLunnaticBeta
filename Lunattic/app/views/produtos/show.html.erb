@@ -1,0 +1,30 @@
+<h1> Lunattic </h1> 
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @produto.titulo %>
+</p>
+
+<p>
+  <strong>Conteudo:</strong>
+  <%= @produto.conteudo %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @produto.preco %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @produto.url %>
+</p>
+
+<p>
+  <strong>Estoque:</strong>
+  <%= @produto.estoque %>
+</p>
+
+<%= link_to 'Edit', edit_produto_path(@produto) %> |
+<%= link_to 'Back', produtos_path %>
